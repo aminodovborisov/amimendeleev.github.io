@@ -85,7 +85,6 @@ function clickOnElement(el, stopWord)
 
 function tableWork() 
 {	
-	alert("Фуф! Кто здесь?!!");
 	var classNamen = '';
 	var snapEl;
 	var cardHeight, cardWidth;
