@@ -1,0 +1,213 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mendeleev Table</title>
+		<link rel="stylesheet" href="mendeleev.css">
+		<script type="text/javascript" src="Mendelements.json"></script>
+		<script type="text/javascript" src="Mendeleev.js"></script>
+	</head>
+	
+	<body onLoad="tableWork()" onResize="tableWork()">
+		<h1>Периодическая таблица Д.И. Менделеева</h1>
+		<div id="mainDiv" class="allTables">
+			<table id="mainTable" class="mainTable">
+				<tr> <!-- Шапка сверху, обозначения групп -->
+					<td class="periodName">
+					<!--
+						Группа &#8594;
+						<br>
+						Период &#8595;
+					-->
+					</td>  <!-- Столбец обозначения периодов -->
+					<td class="groupName">I</td>
+					<td class="groupName">II</td>
+					<td class="groupName">III</td>
+					<td class="groupName">IV</td>
+					<td class="groupName">V</td>
+					<td class="groupName">VI</td>
+					<td class="groupName">VII</td>
+					<td  class="groupName" colspan="3">VIII</td>
+				</tr>
+				<tr>
+					<td class="periodName">1</td>
+					<td class="mainEl" id="number1"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="mainEl" id="number2"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="periodName">2</td>  <!-- Столбец обозначения периодов -->
+					<td class="mainEl" id="number3"></td>
+					<td class="mainEl" id="number4"></td>
+					<td class="mainEl" id="number5"></td>
+					<td class="mainEl" id="number6"></td>
+					<td class="mainEl" id="number7"></td>
+					<td class="mainEl" id="number8"></td>
+					<td class="mainEl" id="number9"></td>
+					<td class="mainEl" id="number10"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="periodName">3</td>  <!-- Столбец обозначения периодов -->
+					<td class="mainEl" id="number11"></td>  
+					<td class="mainEl" id="number12"></td>  
+					<td class="mainEl" id="number13"></td>
+					<td class="mainEl" id="number14"></td>
+					<td class="mainEl" id="number15"></td>
+					<td class="mainEl" id="number16"></td>
+					<td class="mainEl" id="number17"></td>
+					<td class="mainEl" id="number18"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="periodName">4</td>  <!-- Столбец обозначения периодов -->
+					<td class="mainEl" id="number19"></td>
+					<td class="mainEl" id="number20"></td>
+					<td class="mainEl" id="number21"></td>
+					<td class="mainEl" id="number22"></td>
+					<td class="mainEl" id="number23"></td>
+					<td class="mainEl" id="number24"></td>
+					<td class="mainEl" id="number25"></td>
+					<td class="mainEl" id="number26"></td>
+					<td class="mainEl" class="mainEl" id="number27"></td>
+					<td class="mainEl" class="mainEl" id="number28"></td>
+				</tr>
+				<tr>
+					<td class="mainEl" id="number29"></td>
+					<td class="mainEl" id="number30"></td>
+					<td class="mainEl" id="number31"></td>
+					<td class="mainEl" id="number32"></td>
+					<td class="mainEl" id="number33"></td>
+					<td class="mainEl" id="number34"></td>
+					<td class="mainEl" id="number35"></td>
+					<td class="mainEl" id="number36"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="periodName" rowspan="2">5</td>
+					<td class="mainEl" id="number37"></td>
+					<td class="mainEl" id="number38"></td>
+					<td class="mainEl" id="number39"></td>
+					<td class="mainEl" id="number40"></td>
+					<td class="mainEl" id="number41"></td>
+					<td class="mainEl" id="number42"></td>
+					<td class="mainEl" id="number43"></td>
+					<td class="mainEl" id="number44"></td>
+					<td class="mainEl" id="number45"></td>
+					<td class="mainEl" id="number46"></td>
+				</tr>
+				<tr>
+					<td class="mainEl" id="number47"></td>
+					<td class="mainEl" id="number48"></td>
+					<td class="mainEl" id="number49"></td>
+					<td class="mainEl" id="number50"></td>
+					<td class="mainEl" id="number51"></td>
+					<td class="mainEl" id="number52"></td>
+					<td class="mainEl" id="number53"></td>
+					<td class="mainEl" id="number54"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="periodName">6</td>  <!-- Столбец обозначения периодов -->
+					<td class="mainEl" id="number55"></td>
+					<td class="mainEl" id="number56"></td>
+					<td class="mainEl" id="number57"></td>
+					<td class="mainEl" id="number72"></td>
+					<td class="mainEl" id="number73"></td>
+					<td class="mainEl" id="number74"></td>
+					<td class="mainEl" id="number75"></td>
+					<td class="mainEl" id="number76"></td>
+					<td class="mainEl" id="number77"></td>
+					<td class="mainEl" id="number78"></td>
+				</tr>
+				<tr>
+					<td class="mainEl" id="number79"></td>
+					<td class="mainEl" id="number80"></td>
+					<td class="mainEl" id="number81"></td>
+					<td class="mainEl" id="number82"></td>
+					<td class="mainEl" id="number83"></td>
+					<td class="mainEl" id="number84"></td>
+					<td class="mainEl" id="number85"></td>
+					<td class="mainEl" id="number86"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="periodName">7</td>  <!-- Столбец обозначения периодов -->
+					<td class="mainEl" id="number87"></td>
+					<td class="mainEl" id="number88"></td>
+					<td class="mainEl" id="number89"></td>
+					<td class="mainEl" id="number104"></td>
+					<td class="mainEl" id="number105"></td>
+					<td class="mainEl" id="number106"></td>
+					<td class="mainEl" id="number107"></td>
+					<td class="mainEl" id="number108"></td>
+					<td class="mainEl" id="number109"></td>
+					<td class="mainEl" id="number110"></td>
+				</tr>
+				<tr>
+					<td class="mainEl" id="number111"></td>
+					<td class="mainEl" id="number112"></td>
+					<td class="mainEl" id="number113"></td>
+					<td class="mainEl" id="number114"></td>
+					<td class="mainEl" id="number115"></td>
+					<td class="mainEl" id="number116"></td>
+					<td class="mainEl" id="number117"></td>
+					<td class="mainEl" id="number118"></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<h2>Лантаноиды</h2>
+			<table id="lants" class="LaAc">
+				<tr>
+					<td  class="elLaAc" id="number58"></td>
+					<td  class="elLaAc" id="number59"></td>
+					<td  class="elLaAc" id="number60"></td>
+					<td  class="elLaAc" id="number61"></td>
+					<td  class="elLaAc" id="number62"></td>
+					<td  class="elLaAc" id="number63"></td>
+					<td  class="elLaAc" id="number64"></td>
+					<td  class="elLaAc" id="number65"></td>
+					<td  class="elLaAc" id="number66"></td>
+					<td  class="elLaAc" id="number67"></td>
+					<td  class="elLaAc" id="number68"></td>
+					<td  class="elLaAc" id="number69"></td>
+					<td  class="elLaAc" id="number70"></td>
+					<td  class="elLaAc" id="number71"></td>
+				<tr>
+			</table>
+			<h2>Актиноиды</h2>
+			<table id="actis" class="LaAc">
+				<tr>
+					<td  class="elLaAc" id="number90"></td>
+					<td  class="elLaAc" id="number91"></td>
+					<td  class="elLaAc" id="number92"></td>
+					<td  class="elLaAc" id="number93"></td>
+					<td  class="elLaAc" id="number94"></td>
+					<td  class="elLaAc" id="number95"></td>
+					<td  class="elLaAc" id="number96"></td>
+					<td  class="elLaAc" id="number97"></td>
+					<td  class="elLaAc" id="number98"></td>
+					<td  class="elLaAc" id="number99"></td>
+					<td  class="elLaAc" id="number100"></td>
+					<td  class="elLaAc" id="number101"></td>
+					<td  class="elLaAc" id="number102"></td>
+					<td  class="elLaAc" id="number103"></td>
+				<tr>
+			</table>
+			<p>
+			...Вы заметили, что у всех элементов одна и та же относительная атомная масса? Я тоже!
+		</div>
+	</body>
+</html>

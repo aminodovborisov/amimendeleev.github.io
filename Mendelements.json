@@ -1,0 +1,946 @@
+Mendelements = `{
+	"number1": {
+		"number": "1",
+		"sign": "H",
+		"name": "Водород",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number2": {
+		"number": "2",
+		"sign": "He",
+		"name": "Гелий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number3": {
+		"number": "3",
+		"sign": "Li",
+		"name": "Литий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number4": {
+		"number": "4",
+		"sign": "Be",
+		"name": "Бериллий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number5": {
+		"number": "5",
+		"sign": "B",
+		"name": "Бор",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number6": {
+		"number": "6",
+		"sign": "C",
+		"name": "Углерод",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number7": {
+		"number": "7",
+		"sign": "N",
+		"name": "Азот",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number8": {
+		"number": "8",
+		"sign": "O",
+		"name": "Кислород",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number9": {
+		"number": "9",
+		"sign": "F",
+		"name": "Фтор",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number10": {
+		"number": "10",
+		"sign": "Ne",
+		"name": "Неон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number11": {
+		"number": "11",
+		"sign": "Na",
+		"name": "Натрий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number12": {
+		"number": "12",
+		"sign": "Mg",
+		"name": "Магний",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number13": {
+		"number": "13",
+		"sign": "Al",
+		"name": "Алюминий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number14": {
+		"number": "14",
+		"sign": "Si",
+		"name": "Кремний",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number15": {
+		"number": "15",
+		"sign": "P",
+		"name": "Фосфор",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number16": {
+		"number": "16",
+		"sign": "S",
+		"name": "Сера",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number17": {
+		"number": "17",
+		"sign": "Cl",
+		"name": "Хлор",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number18": {
+		"number": "18",
+		"sign": "Ar",
+		"name": "Аргон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number19": {
+		"number": "19",
+		"sign": "K",
+		"name": "Калий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number20": {
+		"number": "20",
+		"sign": "Ca",
+		"name": "Кальций",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number21": {
+		"number": "21",
+		"sign": "Sc",
+		"name": "Скандий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number22": {
+		"number": "22",
+		"sign": "Ti",
+		"name": "Титан",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number23": {
+		"number": "23",
+		"sign": "V",
+		"name": "Ванадий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number24": {
+		"number": "24",
+		"sign": "Cr",
+		"name": "Хром",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number25": {
+		"number": "25",
+		"sign": "Mn",
+		"name": "Марганец",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number26": {
+		"number": "26",
+		"sign": "Fe",
+		"name": "Железо",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number27": {
+		"number": "27",
+		"sign": "Co",
+		"name": "Кобальт",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number28": {
+		"number": "28",
+		"sign": "Ni",
+		"name": "Никель",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number29": {
+		"number": "29",
+		"sign": "Cu",
+		"name": "Медь",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "one"
+	},
+	"number30": {
+		"number": "30",
+		"sign": "Zn",
+		"name": "Цинк",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "one"
+	},
+	"number31": {
+		"number": "31",
+		"sign": "Ga",
+		"name": "Галлий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number32": {
+		"number": "32",
+		"sign": "Ge",
+		"name": "Германий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number33": {
+		"number": "33",
+		"sign": "As",
+		"name": "Мышьяк",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number34": {
+		"number": "34",
+		"sign": "Se",
+		"name": "Селен",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number35": {
+		"number": "35",
+		"sign": "Br",
+		"name": "Бром",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number36": {
+		"number": "36",
+		"sign": "Kr",
+		"name": "Криптон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number37": {
+		"number": "37",
+		"sign": "Rb",
+		"name": "Рубидий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number38": {
+		"number": "38",
+		"sign": "Sr",
+		"name": "Стронций",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number39": {
+		"number": "39",
+		"sign": "Y",
+		"name": "Иттрий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number40": {
+		"number": "40",
+		"sign": "Zr",
+		"name": "Цирконий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number41": {
+		"number": "41",
+		"sign": "Nb",
+		"name": "Ниобий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number42": {
+		"number": "42",
+		"sign": "Mo",
+		"name": "Молибден",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number43": {
+		"number": "43",
+		"sign": "Tc",
+		"name": "Технеций",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number44": {
+		"number": "44",
+		"sign": "Ru",
+		"name": "Рутений",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number45": {
+		"number": "45",
+		"sign": "Rh",
+		"name": "Родий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number46": {
+		"number": "46",
+		"sign": "Pd",
+		"name": "Палладий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number47": {
+		"number": "47",
+		"sign": "Ag",
+		"name": "Серебро",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number48": {
+		"number": "48",
+		"sign": "Cd",
+		"name": "Кадмий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number49": {
+		"number": "49",
+		"sign": "In",
+		"name": "Индий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number50": {
+		"number": "50",
+		"sign": "Sn",
+		"name": "Олово",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number51": {
+		"number": "51",
+		"sign": "Sb",
+		"name": "Сурьма",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number52": {
+		"number": "52",
+		"sign": "Te",
+		"name": "Теллур",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number53": {
+		"number": "53",
+		"sign": "I",
+		"name": "Йод",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number54": {
+		"number": "54",
+		"sign": "Xe",
+		"name": "Ксенон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number55": {
+		"number": "55",
+		"sign": "Cs",
+		"name": "Цезий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number56": {
+		"number": "56",
+		"sign": "Ba",
+		"name": "Барий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number57": {
+		"number": "57",
+		"sign": "La",
+		"name": "Лантан",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number58": {
+		"number": "58",
+		"sign": "Ce",
+		"name": "Церий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number59": {
+		"number": "59",
+		"sign": "Pr",
+		"name": "Празеодим",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number60": {
+		"number": "60",
+		"sign": "Nd",
+		"name": "Неодим",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number61": {
+		"number": "61",
+		"sign": "Pm",
+		"name": "Прометий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number62": {
+		"number": "62",
+		"sign": "Sm",
+		"name": "Самарий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number63": {
+		"number": "63",
+		"sign": "Eu",
+		"name": "Европий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number64": {
+		"number": "64",
+		"sign": "Gd",
+		"name": "Гадолиний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number65": {
+		"number": "65",
+		"sign": "Tb",
+		"name": "Тербий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number66": {
+		"number": "66",
+		"sign": "Dy",
+		"name": "Диспрозий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number67": {
+		"number": "67",
+		"sign": "Ho",
+		"name": "Гольмий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number68": {
+		"number": "68",
+		"sign": "Er",
+		"name": "Эрбий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number69": {
+		"number": "69",
+		"sign": "Tm",
+		"name": "Тулий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number70": {
+		"number": "70",
+		"sign": "Yb",
+		"name": "Иттербий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number71": {
+		"number": "71",
+		"sign": "Lu",
+		"name": "Лютеций",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number72": {
+		"number": "72",
+		"sign": "Hf",
+		"name": "Гафний",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number73": {
+		"number": "73",
+		"sign": "Ta",
+		"name": "Тантал",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number74": {
+		"number": "74",
+		"sign": "W",
+		"name": "Вольфрам",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number75": {
+		"number": "75",
+		"sign": "Re",
+		"name": "Рений",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number76": {
+		"number": "76",
+		"sign": "Os",
+		"name": "Осмий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number77": {
+		"number": "77",
+		"sign": "Ir",
+		"name": "Иридий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number78": {
+		"number": "78",
+		"sign": "Pt",
+		"name": "Платина",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number79": {
+		"number": "79",
+		"sign": "Au",
+		"name": "Золото",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number80": {
+		"number": "80",
+		"sign": "Hg",
+		"name": "Ртуть",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number81": {
+		"number": "81",
+		"sign": "Tl",
+		"name": "Таллий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number82": {
+		"number": "82",
+		"sign": "Pb",
+		"name": "Свинец",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number83": {
+		"number": "83",
+		"sign": "Bi",
+		"name": "Висмут",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number84": {
+		"number": "84",
+		"sign": "Po",
+		"name": "Полоний",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number85": {
+		"number": "85",
+		"sign": "At",
+		"name": "Астат",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number86": {
+		"number": "86",
+		"sign": "Rn",
+		"name": "Радон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number87": {
+		"number": "87",
+		"sign": "Fr",
+		"name": "Франций",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number88": {
+		"number": "88",
+		"sign": "Ra",
+		"name": "Радий",
+		"weight": "1,0000",
+		"color": "pink",
+		"subgroup": "one"
+	},
+	"number89": {
+		"number": "89",
+		"sign": "Ac",
+		"name": "Актиний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number90": {
+		"number": "90",
+		"sign": "Th",
+		"name": "Торий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number91": {
+		"number": "91",
+		"sign": "Pa",
+		"name": "Протактиний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number92": {
+		"number": "92",
+		"sign": "U",
+		"name": "Уран",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number93": {
+		"number": "93",
+		"sign": "Np",
+		"name": "Нептуний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number94": {
+		"number": "94",
+		"sign": "Pu",
+		"name": "Плутоний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number95": {
+		"number": "95",
+		"sign": "Am",
+		"name": "Америций",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number96": {
+		"number": "96",
+		"sign": "Cm",
+		"name": "Кюрий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number97": {
+		"number": "97",
+		"sign": "Bk",
+		"name": "Берклий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number98": {
+		"number": "98",
+		"sign": "Cf",
+		"name": "Калифорний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number99": {
+		"number": "99",
+		"sign": "Es",
+		"name": "Эйнштейний",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number100": {
+		"number": "100",
+		"sign": "Fm",
+		"name": "Фермий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number101": {
+		"number": "101",
+		"sign": "Md",
+		"name": "Менделевий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number102": {
+		"number": "102",
+		"sign": "No",
+		"name": "Нобелий",
+		"weight": "1,0000",
+		"color": "green",
+		"subgroup": "two"
+	},
+	"number103": {
+		"number": "103",
+		"sign": "Lr",
+		"name": "Лоуренсий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number104": {
+		"number": "104",
+		"sign": "Rf",
+		"name": "Резерфордий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number105": {
+		"number": "105",
+		"sign": "Db",
+		"name": "Дубний",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number106": {
+		"number": "106",
+		"sign": "Sg",
+		"name": "Сиборгий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number107": {
+		"number": "107",
+		"sign": "Bh",
+		"name": "Борий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number108": {
+		"number": "108",
+		"sign": "Hs",
+		"name": "Хассий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number109": {
+		"number": "109",
+		"sign": "Mt",
+		"name": "Мейтнерий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number110": {
+		"number": "110",
+		"sign": "Ds",
+		"name": "Дармштадтий",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number111": {
+		"number": "111",
+		"sign": "Rg",
+		"name": "Рентгений",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number112": {
+		"number": "112",
+		"sign": "Cn",
+		"name": "Коперниций",
+		"weight": "1,0000",
+		"color": "blue",
+		"subgroup": "two"
+	},
+	"number113": {
+		"number": "110",
+		"sign": "Nh",
+		"name": "Нихоний",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number114": {
+		"number": "114",
+		"sign": "Fl",
+		"name": "Флеровий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number115": {
+		"number": "115",
+		"sign": "Mc",
+		"name": "Московий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number116": {
+		"number": "116",
+		"sign": "Lv",
+		"name": "Ливерморий",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number117": {
+		"number": "117",
+		"sign": "Ts",
+		"name": "Теннессин",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	},
+	"number118": {
+		"number": "118",
+		"sign": "Og",
+		"name": "Оганесон",
+		"weight": "1,0000",
+		"color": "yellow",
+		"subgroup": "one"
+	}
+}`
