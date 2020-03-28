@@ -94,7 +94,7 @@ function tableWork()
 		// При портретной ориентации можно давать полные версии карточек, если
 		// ширина экрана более 768 пикселей.
 		// При альбомной ориентации даём сокращённые карточки, если
-		if (window.screen.width < 640) {
+		if (window.screen.width < 600) {
 			snapEl.innerHTML = elemCardBV(
 				oneElem['number'],
 				oneElem['sign'],
