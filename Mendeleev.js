@@ -76,6 +76,7 @@ function clickOnElement(el, stopWord)
 
 function tableWork() 
 {
+        var mql = window.matchMedia("(orientation: portrait)");
         alert(window.screen.orientation);	
 	var classNamen = '';
 	var snapEl;
@@ -95,7 +96,7 @@ function tableWork()
 		// При портретной ориентации можно давать полные версии карточек, если
 		// ширина экрана более 768 пикселей.
 		// При альбомной ориентации даём сокращённые карточки, если
-		if (window.screen.width < 600) {
+		if (mql.matches) {
 			snapEl.innerHTML = elemCardBV(
 				oneElem['number'],
 				oneElem['sign'],
