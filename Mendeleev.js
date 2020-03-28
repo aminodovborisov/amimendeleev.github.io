@@ -1,12 +1,3 @@
-/* 
-   TODO:
-   Нет смысла в куче переменных типа oneElName, oneElSign и так далее. Достаточно создать 
-   переменную oneEl, представляющую собой ассоциированный список, дать ей setOfEls[oneElKey] 
-   и таскать оттуда атрибуты.
-   И эту самую переменную можно будет спокойно подать на вход 
-   функции-обработчика события onClick.
-*/   
-
 var setOfEls = JSON.parse(Mendelements);
 
 var elemCardSubgrOneFV = function(elSign, elName, elNumber, elWeight) {
@@ -51,8 +42,8 @@ var elemCardSubgrTwoFV = function(elSign, elName, elNumber, elWeight) {
 var elemCardBV = function(elNumber, elSign, elSubgr) {
 	var className;
 	className = (elSubgr === 'one') 
-		? 'SGOne' 
-		: 'SGTwo';
+		? 'SGOneBV' 
+		: 'SGTwoBV';
 	return 	`
 	<table class="BrfCard">
 		<tr>
@@ -95,22 +86,32 @@ function tableWork()
 	for (var oneElKey in setOfEls) {
 		snapEl = document.getElementById(oneElKey);
 		
-		
 		cardHeight = snapEl.clientHeight;
 		cardWidth = snapEl.clientWidth;
 		
 		oneElem = setOfEls[oneElKey];
 		
-		if (oneElem['subgroup'] === 'one') {
-			snapEl.innerHTML = elemCardSubgrOneFV(oneElem['sign'], 
-												  oneElem['name'], 
-												  oneElem['number'], 
-												  oneElem['weight']);
+		// При портретной ориентации можно давать полные версии карточек, если
+		// ширина экрана более 768 пикселей.
+		// При альбомной ориентации даём сокращённые карточки, если
+		if (window.screen.width < 640) {
+			snapEl.innerHTML = elemCardBV(
+				oneElem['number'],
+				oneElem['sign'],
+				oneElem['subgroup']
+			);
 		} else {
-			snapEl.innerHTML = elemCardSubgrTwoFV(oneElem['sign'], 
-												  oneElem['name'], 
-												  oneElem['number'], 
-												  oneElem['weight']);
+			if (oneElem['subgroup'] === 'one') {
+				snapEl.innerHTML = elemCardSubgrOneFV(oneElem['sign'], 
+													  oneElem['name'], 
+													  oneElem['number'], 
+													  oneElem['weight']);
+			} else {
+				snapEl.innerHTML = elemCardSubgrTwoFV(oneElem['sign'], 
+													  oneElem['name'], 
+													  oneElem['number'], 
+													  oneElem['weight']);
+			}
 		}
 	
 		
