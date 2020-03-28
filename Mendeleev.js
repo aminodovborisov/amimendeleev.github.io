@@ -77,7 +77,7 @@ function clickOnElement(el, stopWord)
 function tableWork() 
 {
         var mql = window.matchMedia("(orientation: portrait)");
-        alert(window.screen.orientation);	
+        // alert(window.screen.orientation);	
 	var classNamen = '';
 	var snapEl;
 	var cardHeight, cardWidth;
