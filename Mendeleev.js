@@ -75,7 +75,8 @@ function clickOnElement(el, stopWord)
 }
 
 function tableWork() 
-{	
+{
+        alert(window.screen.width);	
 	var classNamen = '';
 	var snapEl;
 	var cardHeight, cardWidth;
