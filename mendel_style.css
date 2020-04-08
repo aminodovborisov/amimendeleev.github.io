@@ -294,6 +294,11 @@ h1 {
 }
 
 @media (orientation: landscape) and (max-height: 800px) {
+	.mainElemCell,
+	.laActiCell {
+		border: 2px solid black;
+	}
+	
     .mainSign_One,
     .mainSign_Two {
         font-size: 250%;
