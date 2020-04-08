@@ -283,9 +283,12 @@ h1 {
         font-size: 150%;
     }
     
-    .mainTable,
+    .mainTable {
+        width: 90%;
+    }
+    
     .laActiTab {
-        width: 85%;
+        width: 95%;
     }
     
     .mainElemCell {
