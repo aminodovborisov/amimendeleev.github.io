@@ -291,12 +291,21 @@ h1 {
     .mainElemCell {
         height: 10%;
     }
+    
+    .mainElemCell,
+	.laActiCell,
+    .groupSt,
+    .perSt {
+		border: 2px solid black;
+	}
 }
 
 @media (orientation: landscape) and (max-height: 800px) {
 	.mainElemCell,
-	.laActiCell {
-		border: 2px solid black;
+	.laActiCell,
+    .groupSt,
+    .perSt {
+		border: 1px solid black;
 	}
 	
     .mainSign_One,
