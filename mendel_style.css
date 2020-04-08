@@ -304,7 +304,7 @@ h1 {
 	}
 }
 
-@media (orientation: landscape) and (max-height: 800px) {
+@media (orientation: landscape) and (max-device-width: 800px) {
 	.mainElemCell,
 	.laActiCell,
     .groupSt,
