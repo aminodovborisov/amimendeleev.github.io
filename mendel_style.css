@@ -259,24 +259,24 @@ h1 {
 	}
     
     .frmWindow {
-        height: 12%;
+        height: 20%;
         width: 60%;
         top: 10%;
         left: 20%;
     }
     
     .frmTitle {
-        font-size: 200%;
+        font-size: 250%;
     }
     
     .frmPropName,
     .frmPropCont {
-        font-size: 150%
+        font-size: 200%
     }
     
     .btnFrmCloser {
-        height: 7%;
-        font-size: 150%;
+        height: 8%;
+        font-size: 170%;
     }
     
     .tabCapt {
