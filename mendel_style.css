@@ -262,7 +262,7 @@ h1 {
         height: 25%;
         width: 70%;
         top: 10%;
-        left: 20%;
+        left: 15%;
     }
     
     .frmTitle {
@@ -277,7 +277,7 @@ h1 {
     
     .btnFrmCloser {
         height: 9%;
-        font-size: 170%;
+        font-size: 200%;
     }
     
     .tabCapt {
