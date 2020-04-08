@@ -2,212 +2,884 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mendeleev Table</title>
-		<link rel="stylesheet" href="Mendeleev.css">
-		<script type="text/javascript" src="Mendelements.json"></script>
-		<script type="text/javascript" src="Mendeleev.js"></script>
+		<link rel="stylesheet" href="mendel_style.css">
+		<script type="text/javascript" src="elemcol.json"></script>
+        <script type="text/javascript" src="mendel_elems.json"></script>
+		<script type="text/javascript" src="mendel_script.js"></script>
 	</head>
-	
-	<body onLoad="tableWork()" onResize="tableWork()">
-		<h1>Периодическая таблица Д.И. Менделеева</h1>
+	<body onLoad="tableWork()">
 		<div id="mainDiv" class="allTables">
-			<table id="mainTable" class="mainTable">
-				<tr> <!-- Шапка сверху, обозначения групп -->
-					<td class="periodName">
-					<!--
-						Группа &#8594;
-						<br>
-						Период &#8595;
-					-->
-					</td>  <!-- Столбец обозначения периодов -->
-					<td class="groupName">I</td>
-					<td class="groupName">II</td>
-					<td class="groupName">III</td>
-					<td class="groupName">IV</td>
-					<td class="groupName">V</td>
-					<td class="groupName">VI</td>
-					<td class="groupName">VII</td>
-					<td  class="groupName" colspan="3">VIII</td>
-				</tr>
-				<tr>
-					<td class="periodName">1</td>
-					<td class="mainEl" id="number1"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="mainEl" id="number2"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="periodName">2</td>  <!-- Столбец обозначения периодов -->
-					<td class="mainEl" id="number3"></td>
-					<td class="mainEl" id="number4"></td>
-					<td class="mainEl" id="number5"></td>
-					<td class="mainEl" id="number6"></td>
-					<td class="mainEl" id="number7"></td>
-					<td class="mainEl" id="number8"></td>
-					<td class="mainEl" id="number9"></td>
-					<td class="mainEl" id="number10"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="periodName">3</td>  <!-- Столбец обозначения периодов -->
-					<td class="mainEl" id="number11"></td>  
-					<td class="mainEl" id="number12"></td>  
-					<td class="mainEl" id="number13"></td>
-					<td class="mainEl" id="number14"></td>
-					<td class="mainEl" id="number15"></td>
-					<td class="mainEl" id="number16"></td>
-					<td class="mainEl" id="number17"></td>
-					<td class="mainEl" id="number18"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2" class="periodName">4</td>  <!-- Столбец обозначения периодов -->
-					<td class="mainEl" id="number19"></td>
-					<td class="mainEl" id="number20"></td>
-					<td class="mainEl" id="number21"></td>
-					<td class="mainEl" id="number22"></td>
-					<td class="mainEl" id="number23"></td>
-					<td class="mainEl" id="number24"></td>
-					<td class="mainEl" id="number25"></td>
-					<td class="mainEl" id="number26"></td>
-					<td class="mainEl" class="mainEl" id="number27"></td>
-					<td class="mainEl" class="mainEl" id="number28"></td>
-				</tr>
-				<tr>
-					<td class="mainEl" id="number29"></td>
-					<td class="mainEl" id="number30"></td>
-					<td class="mainEl" id="number31"></td>
-					<td class="mainEl" id="number32"></td>
-					<td class="mainEl" id="number33"></td>
-					<td class="mainEl" id="number34"></td>
-					<td class="mainEl" id="number35"></td>
-					<td class="mainEl" id="number36"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="periodName" rowspan="2">5</td>
-					<td class="mainEl" id="number37"></td>
-					<td class="mainEl" id="number38"></td>
-					<td class="mainEl" id="number39"></td>
-					<td class="mainEl" id="number40"></td>
-					<td class="mainEl" id="number41"></td>
-					<td class="mainEl" id="number42"></td>
-					<td class="mainEl" id="number43"></td>
-					<td class="mainEl" id="number44"></td>
-					<td class="mainEl" id="number45"></td>
-					<td class="mainEl" id="number46"></td>
-				</tr>
-				<tr>
-					<td class="mainEl" id="number47"></td>
-					<td class="mainEl" id="number48"></td>
-					<td class="mainEl" id="number49"></td>
-					<td class="mainEl" id="number50"></td>
-					<td class="mainEl" id="number51"></td>
-					<td class="mainEl" id="number52"></td>
-					<td class="mainEl" id="number53"></td>
-					<td class="mainEl" id="number54"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2" class="periodName">6</td>  <!-- Столбец обозначения периодов -->
-					<td class="mainEl" id="number55"></td>
-					<td class="mainEl" id="number56"></td>
-					<td class="mainEl" id="number57"></td>
-					<td class="mainEl" id="number72"></td>
-					<td class="mainEl" id="number73"></td>
-					<td class="mainEl" id="number74"></td>
-					<td class="mainEl" id="number75"></td>
-					<td class="mainEl" id="number76"></td>
-					<td class="mainEl" id="number77"></td>
-					<td class="mainEl" id="number78"></td>
-				</tr>
-				<tr>
-					<td class="mainEl" id="number79"></td>
-					<td class="mainEl" id="number80"></td>
-					<td class="mainEl" id="number81"></td>
-					<td class="mainEl" id="number82"></td>
-					<td class="mainEl" id="number83"></td>
-					<td class="mainEl" id="number84"></td>
-					<td class="mainEl" id="number85"></td>
-					<td class="mainEl" id="number86"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td rowspan="2" class="periodName">7</td>  <!-- Столбец обозначения периодов -->
-					<td class="mainEl" id="number87"></td>
-					<td class="mainEl" id="number88"></td>
-					<td class="mainEl" id="number89"></td>
-					<td class="mainEl" id="number104"></td>
-					<td class="mainEl" id="number105"></td>
-					<td class="mainEl" id="number106"></td>
-					<td class="mainEl" id="number107"></td>
-					<td class="mainEl" id="number108"></td>
-					<td class="mainEl" id="number109"></td>
-					<td class="mainEl" id="number110"></td>
-				</tr>
-				<tr>
-					<td class="mainEl" id="number111"></td>
-					<td class="mainEl" id="number112"></td>
-					<td class="mainEl" id="number113"></td>
-					<td class="mainEl" id="number114"></td>
-					<td class="mainEl" id="number115"></td>
-					<td class="mainEl" id="number116"></td>
-					<td class="mainEl" id="number117"></td>
-					<td class="mainEl" id="number118"></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
+			<div class="mainTableDiv">
+				<table id="mainTable" class="mainTable">
+					<tr>
+						<td class="cellForMenu">
+                            ≡
+                        </td>
+						<td class="groupSt">I</td>
+						<td class="groupSt">II</td>
+						<td class="groupSt">III</td>
+						<td class="groupSt">IV</td>
+						<td class="groupSt">V</td>
+						<td class="groupSt">VI</td>
+						<td class="groupSt">VII</td>
+						<td colspan="3" class="groupSt">VIII</td>
+					</tr>
+					<tr>
+						<td class="perSt"> 1</td>
+						<td id="number1" class="mainElemCell">
+							<div id="number1_num" class="mainNumber">1</div>
+							<div id="number1_sgn" class="mainSign">H</div>
+							<div id="number1_nme" class="mainName">Дармштадтий</div>
+							<div id="number1_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td colspan="6" class="tabCapt">
+							<h1>Периодическая таблица химических элементов</h1>
+						</td>
+						<td id="number2" class="mainElemCell">
+							<div id="number2_num" class="mainNumber">2</div>
+							<div id="number2_sgn" class="mainSign">He</div>
+							<div id="number2_nme" class="mainName">Дармштадтий</div>
+							<div id="number2_wgt" class="mainWeight">2,001</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="perSt">2</td>
+						<td id="number3" class="mainElemCell">
+							<div id="number3_num" class="mainNumber">1</div>
+							<div id="number3_sgn" class="mainSign">H</div>
+							<div id="number3_nme" class="mainName">Дармштадтий</div>
+							<div id="number3_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number4" class="mainElemCell">
+							<div id="number4_num" class="mainNumber">1</div>
+							<div id="number4_sgn" class="mainSign">H</div>
+							<div id="number4_nme" class="mainName">Дармштадтий</div>
+							<div id="number4_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number5" class="mainElemCell">
+							<div id="number5_num" class="mainNumber">1</div>
+							<div id="number5_sgn" class="mainSign">H</div>
+							<div id="number5_nme" class="mainName">Дармштадтий</div>
+							<div id="number5_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number6" class="mainElemCell">
+							<div id="number6_num" class="mainNumber">1</div>
+							<div id="number6_sgn" class="mainSign">H</div>
+							<div id="number6_nme" class="mainName">Дармштадтий</div>
+							<div id="number6_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number7" class="mainElemCell">
+							<div id="number7_num" class="mainNumber">1</div>
+							<div id="number7_sgn" class="mainSign">H</div>
+							<div id="number7_nme" class="mainName">Дармштадтий</div>
+							<div id="number7_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number8" class="mainElemCell">
+							<div id="number8_num" class="mainNumber">1</div>
+							<div id="number8_sgn" class="mainSign">H</div>
+							<div id="number8_nme" class="mainName">Дармштадтий</div>
+							<div id="number8_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number9" class="mainElemCell">
+							<div id="number9_num" class="mainNumber">1</div>
+							<div id="number9_sgn" class="mainSign">H</div>
+							<div id="number9_nme" class="mainName">Дармштадтий</div>
+							<div id="number9_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number10" class="mainElemCell">
+							<div id="number10_num" class="mainNumber">1</div>
+							<div id="number10_sgn" class="mainSign">H</div>
+							<div id="number10_nme" class="mainName">Дармштадтий</div>
+							<div id="number10_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="perSt">3</td>
+						<td id="number11" class="mainElemCell">
+							<div id="number11_num" class="mainNumber">1</div>
+							<div id="number11_sgn" class="mainSign">H</div>
+							<div id="number11_nme" class="mainName">Дармштадтий</div>
+							<div id="number11_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number12" class="mainElemCell">
+							<div id="number12_num" class="mainNumber">1</div>
+							<div id="number12_sgn" class="mainSign">H</div>
+							<div id="number12_nme" class="mainName">Дармштадтий</div>
+							<div id="number12_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number13" class="mainElemCell">
+							<div id="number13_num" class="mainNumber">1</div>
+							<div id="number13_sgn" class="mainSign">H</div>
+							<div id="number13_nme" class="mainName">Дармштадтий</div>
+							<div id="number13_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number14" class="mainElemCell">
+							<div id="number14_num" class="mainNumber">1</div>
+							<div id="number14_sgn" class="mainSign">H</div>
+							<div id="number14_nme" class="mainName">Дармштадтий</div>
+							<div id="number14_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number15" class="mainElemCell">
+							<div id="number15_num" class="mainNumber">1</div>
+							<div id="number15_sgn" class="mainSign">H</div>
+							<div id="number15_nme" class="mainName">Дармштадтий</div>
+							<div id="number15_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number16" class="mainElemCell">
+							<div id="number16_num" class="mainNumber">1</div>
+							<div id="number16_sgn" class="mainSign">H</div>
+							<div id="number16_nme" class="mainName">Дармштадтий</div>
+							<div id="number16_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number17" class="mainElemCell">
+							<div id="number17_num" class="mainNumber">1</div>
+							<div id="number17_sgn" class="mainSign">H</div>
+							<div id="number17_nme" class="mainName">Дармштадтий</div>
+							<div id="number17_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number18" class="mainElemCell">
+							<div id="number18_num" class="mainNumber">1</div>
+							<div id="number18_sgn" class="mainSign">H</div>
+							<div id="number18_nme" class="mainName">Дармштадтий</div>
+							<div id="number18_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="perSt">4</td>
+						<td id="number19" class="mainElemCell">
+							<div id="number19_num" class="mainNumber">1</div>
+							<div id="number19_sgn" class="mainSign">H</div>
+							<div id="number19_nme" class="mainName">Дармштадтий</div>
+							<div id="number19_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number20" class="mainElemCell">
+							<div id="number20_num" class="mainNumber">1</div>
+							<div id="number20_sgn" class="mainSign">H</div>
+							<div id="number20_nme" class="mainName">Дармштадтий</div>
+							<div id="number20_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number21" class="mainElemCell">
+							<div id="number21_num" class="mainNumber">1</div>
+							<div id="number21_sgn" class="mainSign">H</div>
+							<div id="number21_nme" class="mainName">Дармштадтий</div>
+							<div id="number21_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number22" class="mainElemCell">
+							<div id="number22_num" class="mainNumber">1</div>
+							<div id="number22_sgn" class="mainSign">H</div>
+							<div id="number22_nme" class="mainName">Дармштадтий</div>
+							<div id="number22_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number23" class="mainElemCell">
+							<div id="number23_num" class="mainNumber">1</div>
+							<div id="number23_sgn" class="mainSign">H</div>
+							<div id="number23_nme" class="mainName">Дармштадтий</div>
+							<div id="number23_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number24" class="mainElemCell">
+							<div id="number24_num" class="mainNumber">1</div>
+							<div id="number24_sgn" class="mainSign">H</div>
+							<div id="number24_nme" class="mainName">Дармштадтий</div>
+							<div id="number24_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number25" class="mainElemCell">
+							<div id="number25_num" class="mainNumber">1</div>
+							<div id="number25_sgn" class="mainSign">H</div>
+							<div id="number25_nme" class="mainName">Дармштадтий</div>
+							<div id="number25_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number26" class="mainElemCell">
+							<div id="number26_num" class="mainNumber">1</div>
+							<div id="number26_sgn" class="mainSign">H</div>
+							<div id="number26_nme" class="mainName">Дармштадтий</div>
+							<div id="number26_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number27" class="mainElemCell">
+							<div id="number27_num" class="mainNumber">1</div>
+							<div id="number27_sgn" class="mainSign">H</div>
+							<div id="number27_nme" class="mainName">Дармштадтий</div>
+							<div id="number27_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number28" class="mainElemCell">
+							<div id="number28_num" class="mainNumber">1</div>
+							<div id="number28_sgn" class="mainSign">H</div>
+							<div id="number28_nme" class="mainName">Дармштадтий</div>
+							<div id="number28_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="number29" class="mainElemCell">
+							<div id="number29_num" class="mainNumber">1</div>
+							<div id="number29_sgn" class="mainSign">H</div>
+							<div id="number29_nme" class="mainName">Дармштадтий</div>
+							<div id="number29_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number30" class="mainElemCell">
+							<div id="number30_num" class="mainNumber">1</div>
+							<div id="number30_sgn" class="mainSign">H</div>
+							<div id="number30_nme" class="mainName">Дармштадтий</div>
+							<div id="number30_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number31" class="mainElemCell">
+							<div id="number31_num" class="mainNumber">1</div>
+							<div id="number31_sgn" class="mainSign">H</div>
+							<div id="number31_nme" class="mainName">Дармштадтий</div>
+							<div id="number31_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number32" class="mainElemCell">
+							<div id="number32_num" class="mainNumber">1</div>
+							<div id="number32_sgn" class="mainSign">H</div>
+							<div id="number32_nme" class="mainName">Дармштадтий</div>
+							<div id="number32_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number33" class="mainElemCell">
+							<div id="number33_num" class="mainNumber">1</div>
+							<div id="number33_sgn" class="mainSign">H</div>
+							<div id="number33_nme" class="mainName">Дармштадтий</div>
+							<div id="number33_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number34" class="mainElemCell">
+							<div id="number34_num" class="mainNumber">1</div>
+							<div id="number34_sgn" class="mainSign">H</div>
+							<div id="number34_nme" class="mainName">Дармштадтий</div>
+							<div id="number34_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number35" class="mainElemCell">
+							<div id="number35_num" class="mainNumber">1</div>
+							<div id="number35_sgn" class="mainSign">H</div>
+							<div id="number35_nme" class="mainName">Дармштадтий</div>
+							<div id="number35_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number36" class="mainElemCell">
+							<div id="number36_num" class="mainNumber">1</div>
+							<div id="number36_sgn" class="mainSign">H</div>
+							<div id="number36_nme" class="mainName">Дармштадтий</div>
+							<div id="number36_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="perSt">5</td>
+						<td id="number37" class="mainElemCell">
+							<div id="number37_num" class="mainNumber">1</div>
+							<div id="number37_sgn" class="mainSign">H</div>
+							<div id="number37_nme" class="mainName">Дармштадтий</div>
+							<div id="number37_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number38" class="mainElemCell">
+							<div id="number38_num" class="mainNumber">1</div>
+							<div id="number38_sgn" class="mainSign">H</div>
+							<div id="number38_nme" class="mainName">Дармштадтий</div>
+							<div id="number38_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number39" class="mainElemCell">
+							<div id="number39_num" class="mainNumber">1</div>
+							<div id="number39_sgn" class="mainSign">H</div>
+							<div id="number39_nme" class="mainName">Дармштадтий</div>
+							<div id="number39_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number40" class="mainElemCell">
+							<div id="number40_num" class="mainNumber">1</div>
+							<div id="number40_sgn" class="mainSign">H</div>
+							<div id="number40_nme" class="mainName">Дармштадтий</div>
+							<div id="number40_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number41" class="mainElemCell">
+							<div id="number41_num" class="mainNumber">1</div>
+							<div id="number41_sgn" class="mainSign">H</div>
+							<div id="number41_nme" class="mainName">Дармштадтий</div>
+							<div id="number41_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number42" class="mainElemCell">
+							<div id="number42_num" class="mainNumber">1</div>
+							<div id="number42_sgn" class="mainSign">H</div>
+							<div id="number42_nme" class="mainName">Дармштадтий</div>
+							<div id="number42_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number43" class="mainElemCell">
+							<div id="number43_num" class="mainNumber">1</div>
+							<div id="number43_sgn" class="mainSign">H</div>
+							<div id="number43_nme" class="mainName">Дармштадтий</div>
+							<div id="number43_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number44" class="mainElemCell">
+							<div id="number44_num" class="mainNumber">1</div>
+							<div id="number44_sgn" class="mainSign">H</div>
+							<div id="number44_nme" class="mainName">Дармштадтий</div>
+							<div id="number44_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number45" class="mainElemCell">
+							<div id="number45_num" class="mainNumber">1</div>
+							<div id="number45_sgn" class="mainSign">H</div>
+							<div id="number45_nme" class="mainName">Дармштадтий</div>
+							<div id="number45_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number46" class="mainElemCell">
+							<div id="number46_num" class="mainNumber">1</div>
+							<div id="number46_sgn" class="mainSign">H</div>
+							<div id="number46_nme" class="mainName">Дармштадтий</div>
+							<div id="number46_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="number47" class="mainElemCell">
+							<div id="number47_num" class="mainNumber">1</div>
+							<div id="number47_sgn" class="mainSign">H</div>
+							<div id="number47_nme" class="mainName">Дармштадтий</div>
+							<div id="number47_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number48" class="mainElemCell">
+							<div id="number48_num" class="mainNumber">1</div>
+							<div id="number48_sgn" class="mainSign">H</div>
+							<div id="number48_nme" class="mainName">Дармштадтий</div>
+							<div id="number48_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number49" class="mainElemCell">
+							<div id="number49_num" class="mainNumber">1</div>
+							<div id="number49_sgn" class="mainSign">H</div>
+							<div id="number49_nme" class="mainName">Дармштадтий</div>
+							<div id="number49_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number50" class="mainElemCell">
+							<div id="number50_num" class="mainNumber">1</div>
+							<div id="number50_sgn" class="mainSign">H</div>
+							<div id="number50_nme" class="mainName">Дармштадтий</div>
+							<div id="number50_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number51" class="mainElemCell">
+							<div id="number51_num" class="mainNumber">1</div>
+							<div id="number51_sgn" class="mainSign">H</div>
+							<div id="number51_nme" class="mainName">Дармштадтий</div>
+							<div id="number51_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number52" class="mainElemCell">
+							<div id="number52_num" class="mainNumber">1</div>
+							<div id="number52_sgn" class="mainSign">H</div>
+							<div id="number52_nme" class="mainName">Дармштадтий</div>
+							<div id="number52_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number53" class="mainElemCell">
+							<div id="number53_num" class="mainNumber">1</div>
+							<div id="number53_sgn" class="mainSign">H</div>
+							<div id="number53_nme" class="mainName">Дармштадтий</div>
+							<div id="number53_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number54" class="mainElemCell">
+							<div id="number54_num" class="mainNumber">1</div>
+							<div id="number54_sgn" class="mainSign">H</div>
+							<div id="number54_nme" class="mainName">Дармштадтий</div>
+							<div id="number54_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="perSt">6</td>
+						<td id="number55" class="mainElemCell">
+							<div id="number55_num" class="mainNumber">1</div>
+							<div id="number55_sgn" class="mainSign">H</div>
+							<div id="number55_nme" class="mainName">Дармштадтий</div>
+							<div id="number55_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number56" class="mainElemCell">
+							<div id="number56_num" class="mainNumber">1</div>
+							<div id="number56_sgn" class="mainSign">H</div>
+							<div id="number56_nme" class="mainName">Дармштадтий</div>
+							<div id="number56_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number57" class="mainElemCell">
+							<div id="number57_num" class="mainNumber">1</div>
+							<div id="number57_sgn" class="mainSign">H</div>
+							<div id="number57_nme" class="mainName">Дармштадтий</div>
+							<div id="number57_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number72" class="mainElemCell">
+							<div id="number72_num" class="mainNumber">1</div>
+							<div id="number72_sgn" class="mainSign">H</div>
+							<div id="number72_nme" class="mainName">Дармштадтий</div>
+							<div id="number72_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number73" class="mainElemCell">
+							<div id="number73_num" class="mainNumber">1</div>
+							<div id="number73_sgn" class="mainSign">H</div>
+							<div id="number73_nme" class="mainName">Дармштадтий</div>
+							<div id="number73_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number74" class="mainElemCell">
+							<div id="number74_num" class="mainNumber">1</div>
+							<div id="number74_sgn" class="mainSign">H</div>
+							<div id="number74_nme" class="mainName">Дармштадтий</div>
+							<div id="number74_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number75" class="mainElemCell">
+							<div id="number75_num" class="mainNumber">1</div>
+							<div id="number75_sgn" class="mainSign">H</div>
+							<div id="number75_nme" class="mainName">Дармштадтий</div>
+							<div id="number75_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number76" class="mainElemCell">
+							<div id="number76_num" class="mainNumber">1</div>
+							<div id="number76_sgn" class="mainSign">H</div>
+							<div id="number76_nme" class="mainName">Дармштадтий</div>
+							<div id="number76_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number77" class="mainElemCell">
+							<div id="number77_num" class="mainNumber">1</div>
+							<div id="number77_sgn" class="mainSign">H</div>
+							<div id="number77_nme" class="mainName">Дармштадтий</div>
+							<div id="number77_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number78" class="mainElemCell">
+							<div id="number78_num" class="mainNumber">1</div>
+							<div id="number78_sgn" class="mainSign">H</div>
+							<div id="number78_nme" class="mainName">Дармштадтий</div>
+							<div id="number78_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="number79" class="mainElemCell">
+							<div id="number79_num" class="mainNumber">1</div>
+							<div id="number79_sgn" class="mainSign">H</div>
+							<div id="number79_nme" class="mainName">Дармштадтий</div>
+							<div id="number79_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number80" class="mainElemCell">
+							<div id="number80_num" class="mainNumber">1</div>
+							<div id="number80_sgn" class="mainSign">H</div>
+							<div id="number80_nme" class="mainName">Дармштадтий</div>
+							<div id="number80_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number81" class="mainElemCell">
+							<div id="number81_num" class="mainNumber">1</div>
+							<div id="number81_sgn" class="mainSign">H</div>
+							<div id="number81_nme" class="mainName">Дармштадтий</div>
+							<div id="number81_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number82" class="mainElemCell">
+							<div id="number82_num" class="mainNumber">1</div>
+							<div id="number82_sgn" class="mainSign">H</div>
+							<div id="number82_nme" class="mainName">Дармштадтий</div>
+							<div id="number82_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number83" class="mainElemCell">
+							<div id="number83_num" class="mainNumber">1</div>
+							<div id="number83_sgn" class="mainSign">H</div>
+							<div id="number83_nme" class="mainName">Дармштадтий</div>
+							<div id="number83_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number84" class="mainElemCell">
+							<div id="number84_num" class="mainNumber">1</div>
+							<div id="number84_sgn" class="mainSign">H</div>
+							<div id="number84_nme" class="mainName">Дармштадтий</div>
+							<div id="number84_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number85" class="mainElemCell">
+							<div id="number85_num" class="mainNumber">1</div>
+							<div id="number85_sgn" class="mainSign">H</div>
+							<div id="number85_nme" class="mainName">Дармштадтий</div>
+							<div id="number85_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number86" class="mainElemCell">
+							<div id="number86_num" class="mainNumber">1</div>
+							<div id="number86_sgn" class="mainSign">H</div>
+							<div id="number86_nme" class="mainName">Дармштадтий</div>
+							<div id="number86_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="perSt">7</td>
+						<td id="number87" class="mainElemCell">
+							<div id="number87_num" class="mainNumber">1</div>
+							<div id="number87_sgn" class="mainSign">H</div>
+							<div id="number87_nme" class="mainName">Дармштадтий</div>
+							<div id="number87_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number88" class="mainElemCell">
+							<div id="number88_num" class="mainNumber">1</div>
+							<div id="number88_sgn" class="mainSign">H</div>
+							<div id="number88_nme" class="mainName">Дармштадтий</div>
+							<div id="number88_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number89" class="mainElemCell">
+							<div id="number89_num" class="mainNumber">1</div>
+							<div id="number89_sgn" class="mainSign">H</div>
+							<div id="number89_nme" class="mainName">Дармштадтий</div>
+							<div id="number89_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number104" class="mainElemCell">
+							<div id="number104_num" class="mainNumber">1</div>
+							<div id="number104_sgn" class="mainSign">H</div>
+							<div id="number104_nme" class="mainName">Дармштадтий</div>
+							<div id="number104_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number105" class="mainElemCell">
+							<div id="number105_num" class="mainNumber">1</div>
+							<div id="number105_sgn" class="mainSign">H</div>
+							<div id="number105_nme" class="mainName">Дармштадтий</div>
+							<div id="number105_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number106" class="mainElemCell">
+							<div id="number106_num" class="mainNumber">1</div>
+							<div id="number106_sgn" class="mainSign">H</div>
+							<div id="number106_nme" class="mainName">Дармштадтий</div>
+							<div id="number106_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number107" class="mainElemCell">
+							<div id="number107_num" class="mainNumber">1</div>
+							<div id="number107_sgn" class="mainSign">H</div>
+							<div id="number107_nme" class="mainName">Дармштадтий</div>
+							<div id="number107_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number108" class="mainElemCell">
+							<div id="number108_num" class="mainNumber">1</div>
+							<div id="number108_sgn" class="mainSign">H</div>
+							<div id="number108_nme" class="mainName">Дармштадтий</div>
+							<div id="number108_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number109" class="mainElemCell">
+							<div id="number109_num" class="mainNumber">1</div>
+							<div id="number109_sgn" class="mainSign">H</div>
+							<div id="number109_nme" class="mainName">Дармштадтий</div>
+							<div id="number109_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number110" class="mainElemCell">
+							<div id="number110_num" class="mainNumber">1</div>
+							<div id="number110_sgn" class="mainSign">H</div>
+							<div id="number110_nme" class="mainName">Дармштадтий</div>
+							<div id="number110_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="number111" class="mainElemCell">
+							<div id="number111_num" class="mainNumber">1</div>
+							<div id="number111_sgn" class="mainSign">H</div>
+							<div id="number111_nme" class="mainName">Дармштадтий</div>
+							<div id="number111_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number112" class="mainElemCell">
+							<div id="number112_num" class="mainNumber">1</div>
+							<div id="number112_sgn" class="mainSign">H</div>
+							<div id="number112_nme" class="mainName">Дармштадтий</div>
+							<div id="number112_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number113" class="mainElemCell">
+							<div id="number113_num" class="mainNumber">1</div>
+							<div id="number113_sgn" class="mainSign">H</div>
+							<div id="number113_nme" class="mainName">Дармштадтий</div>
+							<div id="number113_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number114" class="mainElemCell">
+							<div id="number114_num" class="mainNumber">1</div>
+							<div id="number114_sgn" class="mainSign">H</div>
+							<div id="number114_nme" class="mainName">Дармштадтий</div>
+							<div id="number114_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number115" class="mainElemCell">
+							<div id="number115_num" class="mainNumber">1</div>
+							<div id="number115_sgn" class="mainSign">H</div>
+							<div id="number115_nme" class="mainName">Дармштадтий</div>
+							<div id="number115_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number116" class="mainElemCell">
+							<div id="number116_num" class="mainNumber">1</div>
+							<div id="number116_sgn" class="mainSign">H</div>
+							<div id="number116_nme" class="mainName">Дармштадтий</div>
+							<div id="number116_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number117" class="mainElemCell">
+							<div id="number117_num" class="mainNumber">1</div>
+							<div id="number117_sgn" class="mainSign">H</div>
+							<div id="number117_nme" class="mainName">Дармштадтий</div>
+							<div id="number117_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number118" class="mainElemCell">
+							<div id="number118_num" class="mainNumber">1</div>
+							<div id="number118_sgn" class="mainSign">H</div>
+							<div id="number118_nme" class="mainName">Дармштадтий</div>
+							<div id="number118_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div> <!-- mainTableDiv -->
 			<h2>Лантаноиды</h2>
-			<table id="lants" class="LaAc">
-				<tr>
-					<td  class="elLaAc" id="number58"></td>
-					<td  class="elLaAc" id="number59"></td>
-					<td  class="elLaAc" id="number60"></td>
-					<td  class="elLaAc" id="number61"></td>
-					<td  class="elLaAc" id="number62"></td>
-					<td  class="elLaAc" id="number63"></td>
-					<td  class="elLaAc" id="number64"></td>
-					<td  class="elLaAc" id="number65"></td>
-					<td  class="elLaAc" id="number66"></td>
-					<td  class="elLaAc" id="number67"></td>
-					<td  class="elLaAc" id="number68"></td>
-					<td  class="elLaAc" id="number69"></td>
-					<td  class="elLaAc" id="number70"></td>
-					<td  class="elLaAc" id="number71"></td>
-				<tr>
-			</table>
+			<div class="laActiDiv">
+				<table id="lanTab" class="laActiTab">
+					<tr>
+						<td id="number58" class="laActiCell">
+							<div id="number58_num" class="mainNumber">1</div>
+							<div id="number58_sgn" class="mainSign">H</div>
+							<div id="number58_nme" class="mainName">Дармштадтий</div>
+							<div id="number58_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number59" class="laActiCell">
+							<div id="number59_num" class="mainNumber">1</div>
+							<div id="number59_sgn" class="mainSign">H</div>
+							<div id="number59_nme" class="mainName">Дармштадтий</div>
+							<div id="number59_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number60" class="laActiCell">
+							<div id="number60_num" class="mainNumber">1</div>
+							<div id="number60_sgn" class="mainSign">H</div>
+							<div id="number60_nme" class="mainName">Дармштадтий</div>
+							<div id="number60_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number61" class="laActiCell">
+							<div id="number61_num" class="mainNumber">1</div>
+							<div id="number61_sgn" class="mainSign">H</div>
+							<div id="number61_nme" class="mainName">Дармштадтий</div>
+							<div id="number61_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number62" class="laActiCell">
+							<div id="number62_num" class="mainNumber">1</div>
+							<div id="number62_sgn" class="mainSign">H</div>
+							<div id="number62_nme" class="mainName">Дармштадтий</div>
+							<div id="number62_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number63" class="laActiCell">
+							<div id="number63_num" class="mainNumber">1</div>
+							<div id="number63_sgn" class="mainSign">H</div>
+							<div id="number63_nme" class="mainName">Дармштадтий</div>
+							<div id="number63_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number64" class="laActiCell">
+							<div id="number64_num" class="mainNumber">1</div>
+							<div id="number64_sgn" class="mainSign">H</div>
+							<div id="number64_nme" class="mainName">Дармштадтий</div>
+							<div id="number64_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number65" class="laActiCell">
+							<div id="number65_num" class="mainNumber">1</div>
+							<div id="number65_sgn" class="mainSign">H</div>
+							<div id="number65_nme" class="mainName">Дармштадтий</div>
+							<div id="number65_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number66" class="laActiCell">
+							<div id="number66_num" class="mainNumber">1</div>
+							<div id="number66_sgn" class="mainSign">H</div>
+							<div id="number66_nme" class="mainName">Дармштадтий</div>
+							<div id="number66_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number67" class="laActiCell">
+							<div id="number67_num" class="mainNumber">1</div>
+							<div id="number67_sgn" class="mainSign">H</div>
+							<div id="number67_nme" class="mainName">Дармштадтий</div>
+							<div id="number67_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number68" class="laActiCell">
+							<div id="number68_num" class="mainNumber">1</div>
+							<div id="number68_sgn" class="mainSign">H</div>
+							<div id="number68_nme" class="mainName">Дармштадтий</div>
+							<div id="number68_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number69" class="laActiCell">
+							<div id="number69_num" class="mainNumber">1</div>
+							<div id="number69_sgn" class="mainSign">H</div>
+							<div id="number69_nme" class="mainName">Дармштадтий</div>
+							<div id="number69_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number70" class="laActiCell">
+							<div id="number70_num" class="mainNumber">1</div>
+							<div id="number70_sgn" class="mainSign">H</div>
+							<div id="number70_nme" class="mainName">Дармштадтий</div>
+							<div id="number70_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number71" class="laActiCell">
+							<div id="number71_num" class="mainNumber">1</div>
+							<div id="number71_sgn" class="mainSign">H</div>
+							<div id="number71_nme" class="mainName">Дармштадтий</div>
+							<div id="number71_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+				</table>	
+			</div>
 			<h2>Актиноиды</h2>
-			<table id="actis" class="LaAc">
-				<tr>
-					<td  class="elLaAc" id="number90"></td>
-					<td  class="elLaAc" id="number91"></td>
-					<td  class="elLaAc" id="number92"></td>
-					<td  class="elLaAc" id="number93"></td>
-					<td  class="elLaAc" id="number94"></td>
-					<td  class="elLaAc" id="number95"></td>
-					<td  class="elLaAc" id="number96"></td>
-					<td  class="elLaAc" id="number97"></td>
-					<td  class="elLaAc" id="number98"></td>
-					<td  class="elLaAc" id="number99"></td>
-					<td  class="elLaAc" id="number100"></td>
-					<td  class="elLaAc" id="number101"></td>
-					<td  class="elLaAc" id="number102"></td>
-					<td  class="elLaAc" id="number103"></td>
-				<tr>
-			</table>
-			<p>
-			...Вы заметили, что у всех элементов одна и та же относительная атомная масса? Я тоже!
+			<div class="laActiDiv">
+				<table id="actiTab" class="laActiTab">
+					<tr>
+						<td id="number90" class="laActiCell">
+							<div id="number90_num" class="mainNumber">1</div>
+							<div id="number90_sgn" class="mainSign">H</div>
+							<div id="number90_nme" class="mainName">Дармштадтий</div>
+							<div id="number90_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number91" class="laActiCell">
+							<div id="number91_num" class="mainNumber">1</div>
+							<div id="number91_sgn" class="mainSign">H</div>
+							<div id="number91_nme" class="mainName">Дармштадтий</div>
+							<div id="number91_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number92" class="laActiCell">
+							<div id="number92_num" class="mainNumber">1</div>
+							<div id="number92_sgn" class="mainSign">H</div>
+							<div id="number92_nme" class="mainName">Дармштадтий</div>
+							<div id="number92_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number93" class="laActiCell">
+							<div id="number93_num" class="mainNumber">1</div>
+							<div id="number93_sgn" class="mainSign">H</div>
+							<div id="number93_nme" class="mainName">Дармштадтий</div>
+							<div id="number93_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number94" class="laActiCell">
+							<div id="number94_num" class="mainNumber">1</div>
+							<div id="number94_sgn" class="mainSign">H</div>
+							<div id="number94_nme" class="mainName">Дармштадтий</div>
+							<div id="number94_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number95" class="laActiCell">
+							<div id="number95_num" class="mainNumber">1</div>
+							<div id="number95_sgn" class="mainSign">H</div>
+							<div id="number95_nme" class="mainName">Дармштадтий</div>
+							<div id="number95_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number96" class="laActiCell">
+							<div id="number96_num" class="mainNumber">1</div>
+							<div id="number96_sgn" class="mainSign">H</div>
+							<div id="number96_nme" class="mainName">Дармштадтий</div>
+							<div id="number96_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number97" class="laActiCell">
+							<div id="number97_num" class="mainNumber">1</div>
+							<div id="number97_sgn" class="mainSign">H</div>
+							<div id="number97_nme" class="mainName">Дармштадтий</div>
+							<div id="number97_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number98" class="laActiCell">
+							<div id="number98_num" class="mainNumber">1</div>
+							<div id="number98_sgn" class="mainSign">H</div>
+							<div id="number98_nme" class="mainName">Дармштадтий</div>
+							<div id="number98_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number99" class="laActiCell">
+							<div id="number99_num" class="mainNumber">1</div>
+							<div id="number99_sgn" class="mainSign">H</div>
+							<div id="number99_nme" class="mainName">Дармштадтий</div>
+							<div id="number99_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number100" class="laActiCell">
+							<div id="number100_num" class="mainNumber">1</div>
+							<div id="number100_sgn" class="mainSign">H</div>
+							<div id="number100_nme" class="mainName">Дармштадтий</div>
+							<div id="number100_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number101" class="laActiCell">
+							<div id="number101_num" class="mainNumber">1</div>
+							<div id="number101_sgn" class="mainSign">H</div>
+							<div id="number101_nme" class="mainName">Дармштадтий</div>
+							<div id="number101_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number102" class="laActiCell">
+							<div id="number102_num" class="mainNumber">1</div>
+							<div id="number102_sgn" class="mainSign">H</div>
+							<div id="number102_nme" class="mainName">Дармштадтий</div>
+							<div id="number102_wgt" class="mainWeight">1,000</div>
+						</td>
+						<td id="number103" class="laActiCell">
+							<div id="number103_num" class="mainNumber">1</div>
+							<div id="number103_sgn" class="mainSign">H</div>
+							<div id="number103_nme" class="mainName">Дармштадтий</div>
+							<div id="number103_wgt" class="mainWeight">1,000</div>
+						</td>
+					</tr>
+				</table>	
+			</div>
 		</div>
+        <div id="frmBox" class="frmBox">
+            <div id="frmWindow" class="frmWindow">
+                <div id="frmTitle" class="frmTitle">
+                    Дармштадтий
+                </div> <!-- frmTitle -->
+                <div id="frmBody" class="frmBody">
+                    <table id="frmTable" class="frmTable">
+                        <tr id="frmProp04">
+                            <td id="frmProp0401" class="frmPropName">
+                                Относительная атомная масса
+                            </td>
+                            <td id="frm_atomicMass" class="frmPropCont">
+                                
+                            </td>
+                        </tr>
+                        <tr id="frmProp05">
+                            <td id="frmProp0501" class="frmPropName">
+                                Степени окисления
+                            </td>
+                            <td id="frm_oxidationStates" class="frmPropCont">
+                                
+                            </td>
+                        </tr>
+                        <tr id="frmProp13">
+                            <td id="frmProp1301" class="frmPropName">
+                                Электроотрицательность (по Полингу)
+                            </td>
+                            <td id="frm_electronegativity" class="frmPropCont">
+                                
+                            </td>
+                        </tr>
+                        <tr id="frmProp07">
+                            <td id="frmProp0701" class="frmPropName">
+                                Тип (металлические свойства)
+                            </td>
+                            <td id="frm_type" class="frmPropCont">
+                            </td>
+                        </tr>
+                        <tr id="frmProp08">
+                            <td id="frmProp0801" class="frmPropName">
+                                Подтип
+                            </td>
+                            <td id="frm_subtype" class="frmPropCont">
+                            </td>
+                        </tr>
+                        <tr id="frmProp09">
+                            <td id="frmProp0901" class="frmPropName">
+                                Агрегатное состояние
+                            </td>
+                            <td id="frm_standardState" class="frmPropCont">
+                            </td>
+                        </tr>
+                        <tr id="frmProp10">
+                            <td id="frmProp1001" class="frmPropName">
+                                Плотность, г/см<sup>3</sup>
+                            </td>
+                            <td id="frm_density" class="frmPropCont">
+                            </td>
+                        </tr>
+                        <tr id="frmProp11">
+                            <td id="frmProp1101" class="frmPropName">
+                                Температура плавления, К
+                            </td>
+                            <td id="frm_meltingPoint" class="frmPropCont">
+                            </td>
+                        </tr>
+                        <tr id="frmProp12">
+                            <td id="frmProp1201" class="frmPropName">
+                                Температура кипения, К
+                            </td>
+                            <td id="frm_boilingPoint" class="frmPropCont">
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="electrons" class="electrons">
+                        <tr class="elCaprion">
+                        </tr>
+                    </table>
+                </div> <!-- frmBody -->
+                <div id="frmCloser" class="frmCloser">
+                    <button id="btnFrmCloser" class="btnFrmCloser">
+                        Понял, закрывай
+                    </button>
+                </div> <!-- frmCloser -->
+            </div> <!-- frmWindow -->
+        </div> <!-- boxFormular -->
 	</body>
 </html>
