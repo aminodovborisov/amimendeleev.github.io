@@ -260,18 +260,18 @@ h1 {
     
     .frmWindow {
         height: 25%;
-        width: 70%;
+        width: 80%;
         top: 10%;
-        left: 15%;
+        left: 10%;
     }
     
     .frmTitle {
-        font-size: 300%;
+        font-size: 350%;
     }
     
     .frmPropName,
     .frmPropCont {
-        font-size: 250%;
+        font-size: 300%;
         border: 1.5px solid black;
     }
     
@@ -309,7 +309,7 @@ h1 {
 	.laActiCell,
     .groupSt,
     .perSt {
-		border: 3px solid black;
+		border: 1px solid black;
 	}
 	
     .mainSign_One,
@@ -339,5 +339,15 @@ h1 {
     .mainTable,
     .laActiTab {
         width: 90%;
+    }
+    
+    .frmTitle {
+        font-size: 350%;
+    }
+    
+    .frmPropName,
+    .frmPropCont {
+        font-size: 300%;
+        border: 1px solid black;
     }
 }
