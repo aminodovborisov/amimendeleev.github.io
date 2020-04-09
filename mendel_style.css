@@ -345,6 +345,13 @@ h1 {
         font-size: 350%;
     }
     
+    .frmWindow {
+        height: 50%;
+        width: 80%;
+        top: 10%;
+        left: 10%;
+    }
+    
     .frmPropName,
     .frmPropCont {
         font-size: 300%;
